@@ -27,6 +27,17 @@
   position: relative;
 
 }
+.disc-container .icon{
+  position:absolute;
+  z-index: 1;
+  fill: #AEABAC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+
+
+}
 .disc-container .pointer img{
   width: 20vw;
   position: absolute;
@@ -50,6 +61,18 @@
 .disc-container.playing .cover{
 
 animation: circle 20s infinite linear;
+
+}
+.disc-container .icon-pause{
+  display: none;
+
+}
+.disc-container.playing .icon-pause{
+  display: block;
+
+}
+.disc-container.playing .icon-play{
+  display: none;
 
 }
 .disc-container .cover{
