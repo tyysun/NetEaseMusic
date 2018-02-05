@@ -44,17 +44,68 @@
 .disc-container .light{
   width: 73vw;
   position: absolute;
-  animation: circle 20s infinite linear;
+  
+}
+.disc-container.playing .light,
+.disc-container.playing .cover{
+
+animation: circle 20s infinite linear;
+
 }
 .disc-container .cover{
   width: 46vw;
   position: absolute;
   border-radius: 50%;
-  animation: circle 20s infinite linear;
+  
 }
+
 .song-description{
+  flex-grow:1;
+  color: #AEABAC;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 20px;
 
 }
-.page > .link{
+.song-description h1{
+  font-size: 20px;
+  color: white;
+}
+.song-description p{
+  font-size: 14px;
+  line-height: 24px;
+}
+.song-description .lyric{
+  height: 72px;
+  /* border: solid 1px red; */
+  overflow: hidden;
+}
+.song-description p.active{
+
+}
+
+.page > .links{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.page > .links > a{
+  width: 38.5vw;
+  margin:1em;
+  text-align:center;
+  border:1px solid #D43B32;
+  padding:1.5vw;
+  color:#D43B32;
+  border-radius:6px;
+  
+  text-decoration:none;
+  letter-spacing:1vw;
+
+}
+.page > .links > a.main{
+  background:#D43B32;
+  color:white;
 
 }
